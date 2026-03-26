@@ -7,3 +7,9 @@ git merge [현재 위치의 브랜치가 아닌 local브랜치]
  local브랜치에 완성된 코드를 가져와 병합
 
  git push -u [hub/서버 브랜치] [현재/로컬 브랜치]
+
+
+깃허브 브랜치끼리 합치기
+git checkout [합쳐질 위치 깃허브 브랜치 이름]
+git merge [수정된 내용을 가져올 깃허브브랜치]
+git push [로컬/git 브랜치] [깃허브/서버 브랜치]
