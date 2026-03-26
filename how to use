@@ -2,8 +2,28 @@ git fetch origin -> 원격 상태 가져오기
 git switch [git브랜치]/local브랜치이름
 git pull origin [git브랜치]/local브랜치 // origin에 있는거 가져오기
 
+git add [파일명]
+git commit -m "코멘트"
+git push [hub/서버 브랜치] [현재/로컬 브랜치]
 
 git merge [현재 위치의 브랜치가 아닌 local브랜치] 
  local브랜치에 완성된 코드를 가져와 병합
 
  git push -u [hub/서버 브랜치] [현재/로컬 브랜치]
+ -u = 이 경로를 기본경로로 설정
+
+
+깃허브 브랜치끼리 합치기
+git checkout [합쳐질 위치 깃허브 브랜치 이름]
+git merge [수정된 내용을 가져올 깃허브브랜치]
+git push [로컬/git 브랜치] [깃허브/서버 브랜치]
+
+현재 위치 조회
+git branch -vv
+(*이 붙어있는게 현재 작업중인 브랜치)
+git log
+(로그 조회)
+git status
+(현재 상태 조회)
+git branch -add
+(이름만 있으면 git브랜치, origin/[이름]이면 깃허브 브랜치)
